@@ -10,20 +10,15 @@ const Application = ({ Component, pageProps }) => {
     <Head>
       <title>Package viewer</title>
       <link rel="icon" href="/favicon.ico" />
-      <link rel="dns-prefetch" href="//cdn.unix.bio" />
+      <link rel="dns-prefetch" href="//s4.zstatic.net" />
       <meta name="google" value="notranslate" />
       <meta name="referrer" content="strict-origin" />
       <meta name="description" content="cdn viewer of packages." />
-      <meta property="og:site_name" content="cdn.unix.bio" />
       <meta property="og:description" content="cdn viewer of packages." />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="author" content="witt" />
-      <meta name="twitter:creator" content="@echo_witt" />
       <meta property="og:title" content="cdn viewer of packages." />
-      <meta property="og:url" content="//cdn.unix.bio" />
-      <meta property="og:image" content="https://user-images.githubusercontent.com/11304944/77593854-eedf9e80-6f2f-11ea-8ec6-a76cebc2b060.jpg" />
-      <meta property="twitter:image" content="https://user-images.githubusercontent.com/11304944/77593854-eedf9e80-6f2f-11ea-8ec6-a76cebc2b060.jpg" />
       <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover" />
     </Head>
     <ZEITUIProvider>
