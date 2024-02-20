@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import React, { useEffect, useMemo, useState } from 'react'
 import { Input, Tabs, Spacer, Text, Code, Button, useTabs, useInput, useToasts, Row } from '@zeit-ui/react'
 import NpmIcon from './icons/npm'
-import GithubIcon from './icons/github'
 import { checkPackageName, getVersionUrl } from './utils'
 import { useFilesContext } from './files-context'
 import { useClipboard } from 'use-clipboard-copy'
@@ -93,10 +92,6 @@ const Form = () => {
         <Tabs.Item label={<><NpmIcon /> Npm Package</>} value="npm">
           <Text type="secondary" className="tips">Enter the <Code>name</Code> of the NPM package to search. </Text>
           <Input label="npmjs.com/package/" placeholder="package-name" {...NpmInputBindings} onKeyPress={keydownHandler} />
-        </Tabs.Item>
-        <Tabs.Item label={<><GithubIcon /> Repository</>} value="gh">
-          <Text type="secondary" className="tips">Enter the <Code>username/repository_name</Code> of the github to search. </Text>
-          <Input label="github.com/" placeholder="user/repo" {...GHInputBindings} onKeyPress={keydownHandler} />
         </Tabs.Item>
       </Tabs>
       <Spacer y={2} />
