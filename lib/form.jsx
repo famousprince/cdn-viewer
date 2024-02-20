@@ -94,10 +94,6 @@ const Form = () => {
           <Text type="secondary" className="tips">Enter the <Code>name</Code> of the NPM package to search. </Text>
           <Input label="npmjs.com/package/" placeholder="package-name" {...NpmInputBindings} onKeyPress={keydownHandler} />
         </Tabs.Item>
-        <Tabs.Item label={<><GithubIcon /> Repository</>} value="gh">
-          <Text type="secondary" className="tips">Enter the <Code>username/repository_name</Code> of the github to search. </Text>
-          <Input label="github.com/" placeholder="user/repo" {...GHInputBindings} onKeyPress={keydownHandler} />
-        </Tabs.Item>
       </Tabs>
       <Spacer y={2} />
       <Row>
